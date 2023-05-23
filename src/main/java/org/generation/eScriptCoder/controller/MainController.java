@@ -14,11 +14,13 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+
 /**
  * Azure Blob Storage quickstart
  */
 import com.azure.storage.blob.*;
 import com.azure.storage.blob.models.*;
+
 @RestController
 @RequestMapping("/eScriptCoder")
 public class MainController {
@@ -56,6 +58,7 @@ public class MainController {
     {
 
         //To display images from local folder
+        /*
         for (Product product: productService.all())
         {
 
@@ -63,36 +66,35 @@ public class MainController {
             String setURL = imageFolder + "/" + product.getProduct_url();
             product.setProduct_url(setURL);
         }
+*/
 
 
         /* To display images from the Server Container */
 
-        /*
-        //have to change this string
-        String connectStr2 = "DefaultEndpointsProtocol=https;AccountName=soohuaproductimages;AccountKey=l1Da2TH0WCT2FDhW5fM0OSSAMl6nsfK09UdWVO8PksHFTBP8wpZxjDxF/7zBcBA68pD2gEUw8NbT+AStgxKDfA==;EndpointSuffix=core.windows.net";
+
+        //Have to change this string
+        String connectStr2 = "DefaultEndpointsProtocol=https;AccountName=lakshmiproductimages;AccountKey=lFTfJuE2yyokZnBEh5eNbJv7X6baxErImunWTdLF6Yp6nTr1YyGmMqZV8kDuYC6UoitzwjVKTRN7+AStLTS3Dg==;EndpointSuffix=core.windows.net";
         //System.out.println("Connect String: " + connectStr2);
         BlobServiceClient blobServiceClient = new BlobServiceClientBuilder().connectionString(connectStr2).buildClient();
         String containerName = "prodimage";
         BlobContainerClient containerClient = blobServiceClient.getBlobContainerClient(containerName);
 
         //Url or path (should be productimagespring) of the Azure storage container
-        BlobClient blobClient = containerClient.getBlobClient(productService.all().get(0)
-        .getProduct_url());
+        BlobClient blobClient = containerClient.getBlobClient(productService.all().get(0).getProduct_url());
 
 
-        //Loop through the ArrayList of productService.all() and append the Blob url to the imageUrl
+        //Loop through the ArrayList of itemService.all() and append the Blob url to the imageUrl
 
         for (Product product: productService.all())
         {
             //path: productimagespring/prodimage/t-shirt1.jpg
-            String setURL = blobClient.getAccountUrl() + "/" + containerName + "/" + product
-            .getProduct_url();
+            String setURL = blobClient.getAccountUrl() + "/" + containerName + "/" + product.getProduct_url();
             product.setProduct_url(setURL);
 
 
         }
 
-       */
+
 
         //return in the controller represent a response to the client
         return this.productService.all();

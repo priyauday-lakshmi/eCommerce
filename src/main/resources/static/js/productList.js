@@ -3,18 +3,16 @@
 // Product Controller
 
 //development APIs
-const displayProductAPI = 'http://localhost:8080/eScriptCoder/allProduct';
-const findProductAPI = 'http://localhost:8080/eScriptCoder/';
-
-//production APIs
-// const addAPI = 'https://webdemoedward.azurewebsites.net/product/add';
-// const displayProductAPI = 'https://webdemoedward.azurewebsites.net/product/all';
+//const displayProductAPI = 'http://localhost:8080/eScriptCoder/allProduct';
+//const findProductAPI = 'http://localhost:8080/eScriptCoder/';
 
 //production APIs
 
-//const displayProductAPI = 'XXX/eScriptCoder/allProduct';
-//const findProductAPI = 'XXX/eScriptCoder/';
+const displayProductAPI = 'https://lakshmiecommerce.azurewebsites.net/eScriptCoder/allProduct';
+const findProductAPI = 'https://lakshmiecommerce.azurewebsites.net/eScriptCoder/';
 //const addAPI = 'https://fsdwebdemospring.azurewebsites.net/item/add';
+
+
 
 
 const noOfProduct = productList.length;
