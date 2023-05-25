@@ -40,7 +40,7 @@ public class FileUploadUtil {
 
 
         //Change this string
-        String connectStr2 = "DefaultEndpointsProtocol=https;AccountName=lakshmiproductimages;AccountKey=lFTfJuE2yyokZnBEh5eNbJv7X6baxErImunWTdLF6Yp6nTr1YyGmMqZV8kDuYC6UoitzwjVKTRN7+AStLTS3Dg==;EndpointSuffix=core.windows.net";
+        String connectStr2 = "DefaultEndpointsProtocol=https;AccountName=lakshmiecommerceprodimg;AccountKey=yLoK0NX23jq/roxHu7KTjH+Qt8hA2v2W0fSf1EN84GOIjOP78uLgEfDptsz4aZFtMxmq7ym171aq+AStf9mgKw==;EndpointSuffix=core.windows.net";
 
         //create a connection between application and storage container that we have created in our Azure server
         BlobServiceClient blobServiceClient = new BlobServiceClientBuilder().connectionString(connectStr2).buildClient();
