@@ -7,7 +7,7 @@
 //const displayCategoryAPI = 'http://localhost:8080/eScriptCoder/allCategory';
 
 //production APIs
-const displayCategoryAPI = 'https://soohuaecommerce.azurewebsites.net/eScriptCoder/allCategory';
+const displayCategoryAPI = 'https://lakshmiecommerce.azurewebsites.net/eScriptCoder/allCategory';
 //const addAPI = 'https://fsdwebdemospring.azurewebsites.net/item/add';
 
 
