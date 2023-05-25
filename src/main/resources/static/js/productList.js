@@ -8,8 +8,9 @@
 
 //production APIs
 
-const displayProductAPI = 'https://lakshmiecommerce.azurewebsites.net/eScriptCoder/allProduct';
-const findProductAPI = 'https://lakshmiecommerce.azurewebsites.net/eScriptCoder/';
+const displayProductAPI = 'https://soohuaecommerce.azurewebsites.net/eScriptCoder/allProduct';
+const findProductAPI = 'https://soohuaecommerce.azurewebsites.net/eScriptCoder/';
+
 //const addAPI = 'https://fsdwebdemospring.azurewebsites.net/item/add';
 
 
