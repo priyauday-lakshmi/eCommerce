@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org/" th:fragment="aboutus">
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--    <link href="css/aboutus.css" rel="stylesheet">-->
-
     <title>About Us</title>
 </head>
 
 <body>
-<section id="aboutUsSection">
+<section th:fragment="aboutus" id="aboutUsSection">
     <!-- Content of About Us -->
     <div class="container">
         <div id="aboutUsBackgroundImg">
@@ -45,10 +43,10 @@
     </div>
     <div class="container">
         <div class="row justify-content-around">
-            <div class="card col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"
-                 style="max-width: 32rem; min-width: 32rem" id="aboutUsCard">
-                <div class="card-header d-flex justify-content-center" id="aboutUsPhoto">
-                    <img src="images/edward-profile-pic.jpg" class="card-img-top" alt="image">
+            <div class="card col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 aboutUsCard"
+                 style="max-width: 32rem; min-width: 32rem">
+                <div class="card-header d-flex justify-content-center aboutUsPhoto">
+                    <img src="images/edwardprofilepic.jpg" class="card-img-top" alt="image">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title memberName">Edward Tan Pau Kiat</h5>
@@ -81,10 +79,10 @@
                     </a>
                 </div>
             </div>
-            <div class="card col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"
-                 style="max-width: 32rem; min-width: 32rem" id="aboutUsCard">
-                <div class="card-header d-flex justify-content-center" id="aboutUsPhoto">
-                    <img src="images/soohuapotrait_360.jpg" class="card-img-top" alt="image">
+            <div class="card col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 aboutUsCard"
+                 style="max-width: 32rem; min-width: 32rem">
+                <div class="card-header d-flex justify-content-center aboutUsPhoto">
+                    <img src="images/soohuaportrait_360.jpg" class="card-img-top" alt="image">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title memberName">Ng Soo Hua</h5>
@@ -115,9 +113,9 @@
                     </a>
                 </div>
             </div>
-            <div class="card col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"
-                 style="max-width: 32rem; min-width: 32rem" id="aboutUsCard">
-                <div class="card-header d-flex justify-content-center" id="aboutUsPhoto">
+            <div class="card col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 aboutUsCard"
+                 style="max-width: 32rem; min-width: 32rem">
+                <div class="card-header d-flex justify-content-center aboutUsPhoto">
                     <img src="images/lakshmi.jpg" class="card-img-top" alt="image">
                 </div>
                 <div class="card-body">
@@ -148,9 +146,9 @@
                     </a>
                 </div>
             </div>
-            <div class="card col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"
-                 style="max-width: 32rem; min-width: 32rem" id="aboutUsCard">
-                <div class="card-header d-flex justify-content-center" id="aboutUsPhoto">
+            <div class="card col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 aboutUsCard"
+                 style="max-width: 32rem; min-width: 32rem">
+                <div class="card-header d-flex justify-content-center aboutUsPhoto">
                     <img src="images/sypic.jpg" class="card-img-top" alt="image">
                 </div>
                 <div class="card-body">

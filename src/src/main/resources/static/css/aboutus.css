@@ -1,8 +1,8 @@
-#aboutUsCard {
+.aboutUsCard {
   margin: 30px 20px;
 }
 
-#aboutUsPhoto img {
+.aboutUsPhoto img {
   height: 200px;
   width: 200px;
 }
@@ -29,4 +29,8 @@
 
 .card-body .memberName {
     color: #cc8219;
+}
+
+.card-footer a:hover {
+    opacity: 0.8;
 }

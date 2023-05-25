@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org/" th:fragment="navbar">
+<html lang="en" xmlns:th="https://www.thymeleaf.org/" >
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/navBar.css" rel="stylesheet">
-
 
   <title>NavBar</title>
 </head>
@@ -14,7 +12,7 @@
 <body>
 
   <!--This class do search-->
-
+<div th:fragment="navbar">
   <div class="container-fluid d-flex">
     <nav class="d-flex navbar navbar-expand-lg .bg-body overwritePadTopBottom">
       <!--This class do flexbox-->
@@ -127,6 +125,7 @@
   </div>
  <!-- <script src="js/myJS.js"></script>-->
   <script src="js/navbar.js"></script>
+</div>
 
 </body>
 
